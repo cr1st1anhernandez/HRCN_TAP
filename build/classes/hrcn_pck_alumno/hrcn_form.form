@@ -39,7 +39,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="9" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,11 +48,14 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder roundedCorners="true"/>
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Datos del Alumno"/>
           </Border>
         </Property>
         <Property name="toolTipText" type="java.lang.String" value=""/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="CaskaydiaCove NF" size="18" style="0"/>
+        </Property>
         <Property name="name" type="java.lang.String" value="Datos del Alumno" noResource="true"/>
       </Properties>
 
@@ -104,9 +107,9 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblNumeroControl1" min="-2" pref="195" max="-2" attributes="0"/>
-                              <Component id="cboCarreras" min="-2" max="-2" attributes="0"/>
                               <Component id="lblNumeroControl" min="-2" pref="195" max="-2" attributes="0"/>
+                              <Component id="cboCarreras" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCarrera" min="-2" pref="195" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="optMasculino" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -123,7 +126,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                  <Component id="lblNumeroControl1" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="lblNumeroControl" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtNumControl" min="-2" pref="39" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
@@ -146,7 +149,7 @@
                       <Component id="optFemenino" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="lblNumeroControl" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="lblCarrera" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="cboCarreras" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="61" max="32767" attributes="0"/>
@@ -224,7 +227,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblNumeroControl">
+        <Component class="javax.swing.JLabel" name="lblCarrera">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="CaskaydiaCove NF" size="18" style="0"/>
@@ -312,7 +315,7 @@
             <Property name="text" type="java.lang.String" value="Femenino"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblNumeroControl1">
+        <Component class="javax.swing.JLabel" name="lblNumeroControl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="CaskaydiaCove NF" size="18" style="0"/>

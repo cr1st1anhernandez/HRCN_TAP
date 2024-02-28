@@ -36,7 +36,7 @@ public class hrcn_form extends javax.swing.JFrame {
                 btnMostar = new javax.swing.JButton();
                 btnAceptar = new javax.swing.JButton();
                 btnCancelar = new javax.swing.JButton();
-                lblNumeroControl = new javax.swing.JLabel();
+                lblCarrera = new javax.swing.JLabel();
                 lblNombres = new javax.swing.JLabel();
                 lblApellidoPaterno = new javax.swing.JLabel();
                 txtNombre = new javax.swing.JTextField();
@@ -44,13 +44,14 @@ public class hrcn_form extends javax.swing.JFrame {
                 lblApellidoPaterno1 = new javax.swing.JLabel();
                 optMasculino = new javax.swing.JRadioButton();
                 optFemenino = new javax.swing.JRadioButton();
-                lblNumeroControl1 = new javax.swing.JLabel();
+                lblNumeroControl = new javax.swing.JLabel();
                 cboCarreras = new javax.swing.JComboBox<>();
 
                 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-                jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+                jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del Alumno"));
                 jPanel1.setToolTipText("");
+                jPanel1.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
                 jPanel1.setName("Datos del Alumno"); // NOI18N
 
                 txtApellidoMaterno.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
@@ -93,8 +94,8 @@ public class hrcn_form extends javax.swing.JFrame {
                         }
                 });
 
-                lblNumeroControl.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
-                lblNumeroControl.setText("Carrera");
+                lblCarrera.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
+                lblCarrera.setText("Carrera");
 
                 lblNombres.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
                 lblNombres.setText("Nombres(s)");
@@ -135,8 +136,8 @@ public class hrcn_form extends javax.swing.JFrame {
                 optFemenino.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
                 optFemenino.setText("Femenino");
 
-                lblNumeroControl1.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
-                lblNumeroControl1.setText("Número de control");
+                lblNumeroControl.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
+                lblNumeroControl.setText("Número de control");
 
                 cboCarreras.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 18)); // NOI18N
                 cboCarreras.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ingeniería en Sistemas Computacionales", "Ingeniería Civil", "Ingeniería en Gestión Empresarial", "Ingeniería Electrónica", "Ingeniería Eléctrica", "Ingeniería Industrial", "Ingeniería Mecánica", "Ingeniería Química", "Licenciatura en Administración" }));
@@ -184,9 +185,9 @@ public class hrcn_form extends javax.swing.JFrame {
                                                 .addGap(18, 18, 18))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(lblNumeroControl1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(cboCarreras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addComponent(lblNumeroControl, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(cboCarreras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(lblCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                                                 .addComponent(optMasculino)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -197,7 +198,7 @@ public class hrcn_form extends javax.swing.JFrame {
                         jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(19, 19, 19)
-                                .addComponent(lblNumeroControl1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblNumeroControl, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtNumControl, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(19, 19, 19)
@@ -216,7 +217,7 @@ public class hrcn_form extends javax.swing.JFrame {
                                         .addComponent(optMasculino)
                                         .addComponent(optFemenino))
                                 .addGap(35, 35, 35)
-                                .addComponent(lblNumeroControl, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cboCarreras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
@@ -241,40 +242,77 @@ public class hrcn_form extends javax.swing.JFrame {
                         .addGroup(layout.createSequentialGroup()
                                 .addGap(14, 14, 14)
                                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(9, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 );
 
                 pack();
         }// </editor-fold>//GEN-END:initComponents
 
-	private ArrayList<Alumno> alumnos = new ArrayList<>();
-
-        private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+        private void cboCarrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboCarrerasActionPerformed
 		// TODO add your handling code here:
-        }//GEN-LAST:event_txtApellidoMaternoActionPerformed
-
-        private void txtNumControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumControlActionPerformed
-		// TODO add your handling code here:
-        }//GEN-LAST:event_txtNumControlActionPerformed
-
-        private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
-		// TODO add your handling code here:
-        }//GEN-LAST:event_txtNombreActionPerformed
-
-        private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
-		// TODO add your handling code here:
-        }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+        }//GEN-LAST:event_cboCarrerasActionPerformed
 
         private void optMasculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_optMasculinoActionPerformed
 		// TODO add your handling code here:
         }//GEN-LAST:event_optMasculinoActionPerformed
 
-        private void cboCarrerasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboCarrerasActionPerformed
+        private void txtApellidoPaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoPaternoActionPerformed
 		// TODO add your handling code here:
-        }//GEN-LAST:event_cboCarrerasActionPerformed
+        }//GEN-LAST:event_txtApellidoPaternoActionPerformed
+
+        private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+		// TODO add your handling code here:
+        }//GEN-LAST:event_txtNombreActionPerformed
+
+        private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+		// TODO add your handling code here:
+		txtNombre.setText("");
+		txtApellidoPaterno.setText("");
+		txtApellidoMaterno.setText("");
+		txtNumControl.setText("");
+		cboCarreras.setSelectedItem("Ingeniería en Sistemas Computacionales");
+		optMasculino.setSelected(true);
+        }//GEN-LAST:event_btnCancelarActionPerformed
+
+	public boolean checkFields() {
+		String nombres = txtNombre.getText();
+		if (!nombres.matches("^[a-zA-Z ]+$")) {
+			System.out.println("El campo de nombres solo puede contener letras y espacios");
+			return false;
+		}
+
+		String apellidoPaterno = txtApellidoPaterno.getText();
+		if (!apellidoPaterno.matches("^[a-zA-Z]+$")) {
+			System.out.println("El campo de apellido paterno solo puede contener letras");
+			return false;
+		}
+
+		String apellidoMaterno = txtApellidoMaterno.getText();
+		if (!apellidoMaterno.matches("^[a-zA-Z]+$")) {
+			System.out.println("El campo de apellido materno solo puede contener letras");
+			return false;
+		}
+
+		String numeroControl = txtNumControl.getText();
+		if (numeroControl.length() != 8) {
+			System.out.println("Ingresa un numero de control de 8 digitos");
+			return false;
+		}
+
+		if (nombres.equals("") || apellidoPaterno.equals("") || apellidoMaterno.equals("") || numeroControl.equals("")) {
+			System.out.println("Ingresa todos los valores solicitados");
+			return false;
+		}
+
+		return true;
+	}
 
         private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
 		// TODO add your handling code here:
+		if (!checkFields()) {
+			return;
+		}
+
 		String nombres = txtNombre.getText();
 		String apellidoPaterno = txtApellidoPaterno.getText();
 		String apellidoMaterno = txtApellidoMaterno.getText();
@@ -290,16 +328,6 @@ public class hrcn_form extends javax.swing.JFrame {
 		System.out.println("Alumno almacenado correctamente");
         }//GEN-LAST:event_btnAceptarActionPerformed
 
-        private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-		// TODO add your handling code here:
-		txtNombre.setText("");
-		txtApellidoPaterno.setText("");
-		txtApellidoMaterno.setText("");
-		txtNumControl.setText("");
-		cboCarreras.setSelectedItem("Ingeniería en Sistemas Computacionales");
-		optMasculino.setSelected(true);
-        }//GEN-LAST:event_btnCancelarActionPerformed
-
         private void btnMostarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostarActionPerformed
 		// TODO add your handling code here:
 		if (alumnos.isEmpty()) {
@@ -310,6 +338,16 @@ public class hrcn_form extends javax.swing.JFrame {
 			}
 		}
         }//GEN-LAST:event_btnMostarActionPerformed
+
+        private void txtNumControlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumControlActionPerformed
+		// TODO add your handling code here:
+        }//GEN-LAST:event_txtNumControlActionPerformed
+
+        private void txtApellidoMaternoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoMaternoActionPerformed
+		// TODO add your handling code here:
+        }//GEN-LAST:event_txtApellidoMaternoActionPerformed
+
+	private ArrayList<Alumno> alumnos = new ArrayList<>();
 
 	/**
 	 * @param args the command line arguments
@@ -355,9 +393,9 @@ public class hrcn_form extends javax.swing.JFrame {
         private javax.swing.JPanel jPanel1;
         private javax.swing.JLabel lblApellidoPaterno;
         private javax.swing.JLabel lblApellidoPaterno1;
+        private javax.swing.JLabel lblCarrera;
         private javax.swing.JLabel lblNombres;
         private javax.swing.JLabel lblNumeroControl;
-        private javax.swing.JLabel lblNumeroControl1;
         private javax.swing.JRadioButton optFemenino;
         private javax.swing.JRadioButton optMasculino;
         private javax.swing.JTextField txtApellidoMaterno;

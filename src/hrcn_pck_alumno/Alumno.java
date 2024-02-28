@@ -36,5 +36,4 @@ public class Alumno {
 			+ "Carrera: " + carrera + "\n"
 			+ "Genero: " + generoStr;
 	}
-	
 }
